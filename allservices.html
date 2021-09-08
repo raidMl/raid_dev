@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/demo-logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa fa-bars"></i>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" style="margin-left:auto;">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page " href="index.html#banner">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html#about-us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html#testimonials">TESTIMONTALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contact-us">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link " href="#" onclick="change_color()"> -->
+                            <select dir=rtl class="form-select text-center" name="sel" id="themes"
+                                onchange="change_color()">
+                                <option value="1">theme 1 </option>
+                                <option value="2">theme 2</option>
+                                <option value="3">theme3</option>
+                            </select>
+                            <!-- </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <!--banner section              -->
+    <section id="banner">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">BEST DIGITAL AGENCY</p>
+                    <p>we give you original products with nice price you can see our profile</p>
+                    <a href=""><img src="images/play.png" class="play-btn">Watch Presentation Video</a>
+                </div>
+
+                <div class="col-md-6 text-center"><img src="images/home2.png" class="img-fluid"></div>
+            </div>
+        </div>
+        <img src="images/wave1.png" class="bottom-img">
+    </section>
+
+    <!--************* SERVICES section **************************-->
+    <section id="services">
+        <div class="container">
+            <h1 class="title text-center">WHAT WE DO?</h1>
+            <div class="row">
+                <div class="col-md-4  services text-center ">
+                    <a href=""> <img src="images/service1.png" class="img">
+                        <h4> SEO FOR WEBSITE</h4>
+                    </a>
+                    <p>Search Engine Optimization - is the process of increasing your website's visibility to have many
+                        vues </p>
+                </div>
+                <div class="col-md-4  services text-center ">
+                    <a href="#"> <img src="images/service2.png" class="img">
+                        <h4>CREATE BUSINESS ads </h4>
+                    </a>
+
+                    <p>create ads to your website ,facebook page or instagram account to show your content</p>
+                </div>
+                <div class="col-md-4  services text-center "><a href=""> <img src="images/service3.png " class="img ">
+                        <h4>CREATE WEBSITE
+                        </h4>
+                    </a>
+                    <p>create responsive website with all devices frontend +backend using populair languge </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4  services text-center ">
+                    <a href=""><img src="images/web_design.png" class="img">
+                        <h4> WEB DESIGN</h4>
+                    </a>
+                    <p>create nice website design (frontend)using html css javascript and bootstrap </p>
+                </div>
+                <div class="col-md-4  services text-center ">
+                    <a href=""> <img src="images/web_devlop2 .png" class="img">
+                        <h4>WEB DEVLOPMENT </h4>
+                    </a>
+
+                    <p> I will create the backend : create databases ,php files,manage data ... ect using php sql and
+                        mysql</p>
+                </div>
+                <div class="col-md-4  services text-center "><a href=""> <img src="images/desktop_app.png" class="img ">
+                        <h4>CREATE DESKTOP APP
+                        </h4>
+                    </a>
+                    <p>create responsive application for your desktop with all screen and system windows mac linux
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- contact us ************************************-->
+    <section id="contact-us">
+        <div class="container text-center">
+            <p>Follow us on Social Media </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/RAID-TECH-100390588074022">
+                    <img src="images/facebook-icon.png"> </a>
+
+                <a href="https://www.instagram.com/raid_dev/">
+                    <img src="images/instagram-icon.png"> </a>
+                <a href="https://www.linkedin.com/in/raid-dev-266a1b1b7/">
+                    <img src="images/linkedin-icon.png"> </a>
+                <a href="">
+                    <img src="images/twitter-icon.png"> </a>
+                <a href="">
+                    <img src="images/snapchat-icon.png"> </a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+    <section id="footer">
+        <img src="images/wave2.png">
+        <div class="container">
+            <div class="row">
+                <div class="col md-4 footer-box">
+                    <img src="images/demo-logo.png">
+                    <p>we give you original products ,good work with nice price you can see our portfolio ,it conatain
+                        several projects</p>
+
+                </div>
+                <div class="col md-4 footer-box">
+                    <p><b>Contact Us</b></p>
+                    <p><i class="fas fa-phone-alt"></i> +213 669453240</p>
+                    <p><i class="fas fa-envelope"></i> raidreus.22@gmail.com
+                    </p>
+                    <p><i class="fas fa-map-marker"></i> Setif-Algeria
+                    </p>
+
+                </div>
+                <div class="col md-4 footer-box" align=center>
+                    <p><b>Send a Message</b></p>
+
+                    <input type="email" name="mail" class="form-control" placeholder=" enter your mail ">
+                    <textarea name="message" class="form-control" placeholder=" write your message"></textarea>
+
+                    <input type="button" name="btn" class="btn btn-primary mt-3" value="add" id="btn-primary">
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright reserved: © this website created by <b>raid_dev </b> 2021</p>
+        </div>
+    </section>
+    <!-- smooth-scroll.js -->
+    <script src="smooth-scroll.js"></script>
+    <!-- initialise smoth scroll -->
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js "
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj "
+    crossorigin="anonymous "></script>
+
+<script src="script.js"></script>
+
+</html>
