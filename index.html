@@ -73,8 +73,18 @@
                     <p class="promo-title promo-title2 " >BEST DIGITAL AGENCY</p>
 
                     <p>we give you original products with nice price you can see our profile</p>
-                    <a href=""><img src="images/play.png" class="play-btn">Watch Presentation Video</a>
+                    <a href="" onclick="showVideo(event)"><img src="images/play.png" class="play-btn">Watch Presentation Video</a>
                 </div>
+                <div id="videoContainer" style="position:absolute; display: none; margin-top: 20px; z-index: 3;">
+                   
+                    <video controls  id="videoPlayer">
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="closeButton" onclick="closeVideo()" style="margin-top: 15px; padding: 10px 20px; border: none; background: #f00; color: white; border-radius: 5px; cursor: pointer; font-size: 16px; position:absolute; top:-17px ;margin-left: -80px;">Close</button>
+
+                </div>
+           
 
                 <!-- <div class="col-md-6 text-center"><img src="images/home2.png" class="img-fluid"></div> -->
                 <div class="col-md-6 order-1 text-center  hero-img" data-aos="zoom-in" data-aos-delay="200">

@@ -148,3 +148,18 @@ function typeText() {
 }
 
 typeText();
+
+function showVideo(event) {
+    event.preventDefault();
+    const videoContainer = document.getElementById('videoContainer');
+    videoContainer.style.display = 'block';
+}
+
+
+function closeVideo() {
+    const videoContainer = document.getElementById('videoContainer');
+    const videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.pause(); // Stop the video
+    videoPlayer.currentTime = 0; // Reset the video time
+    videoContainer.style.display = 'none';
+}
