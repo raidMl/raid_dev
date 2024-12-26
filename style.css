@@ -20,6 +20,7 @@
         padding-left: 20px;
     }
     
+    
     .navbar-nav li {
         padding: 0 10px;
     }
@@ -184,6 +185,7 @@
     
     #about-us ul {
         margin-left: 20px;
+        
     }
     
     #testimonials {
@@ -194,6 +196,16 @@
         border-left: 4px solid rgb(139, 13, 83);
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .testimonials1{
+        border-left: 4px solid rgb(139, 13, 83);
+
+    }
+    .testimonials2{
+        border-left: 4px solid rgb(1, 7, 95);
+    }
+    .testimonials3{
+        border-left: 4px solid #046374;
     }
     
     .testimonials img {
@@ -286,17 +298,20 @@
     }
     
     .footer-box .btn-primary {
-        box-shadow: none !important;
+        /* box-shadow: none !important; */
         margin-top: 10px;
-        border-radius: 10px;
-        border: 1px solid #ffffff00;
+        border-radius: 20px;  
+        padding: 7px 20px;  
+        border: none;
         opacity: 0.9;
         background-image: linear-gradient(to right, rgb(132, 17, 136), rgb(87, 12, 79));
     }
     .footer-box .btn-primary:hover {
-        opacity: 0.7;
-        box-shadow: 2px 2px 5px 1px #888888;
-        border: 1px solid #fff;
+        opacity: 0.9;
+        box-shadow: 2px 2px 5px 1px #303030d8;
+        background-image: none!important;
+        background-color: white;
+        color:rgba(19, 19, 19, 0.966)
     }
     
     hr {
