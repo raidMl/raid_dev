@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: roboto;
+    background: white;
+
+
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .material-icons {
+    cursor: pointer;
+    color: rgba(224, 33, 33, 0.877);
+    border-radius: 50%;
+    border: none;
+    padding: 6px;
+  }
+
+  .material-icons:hover {
+    background-color: rgba(179, 179, 179, 0.877);
+  }
+  
+  .invoice-container {
+    margin: auto;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+    animation: slideIn 0.5s ease forwards;
+
+  }
+  
+  .invoice-header {
+    display: flex;
+    padding: 70px 0%;
+    width: 100%;
+   justify-content: space-between;
+   
+  }
+  .invoice-header div input{
+    width: 200px!important;
+    border: 1px solid #0000007a;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgb(66, 66, 66);
+  }
+  
+  .date {
+    padding: 5px 0px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgb(156, 156, 156);
+  }
+  
+  .invoice-number {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: rgb(156, 156, 156);
+  }
+  
+  .space {
+    width: 50%;
+  }
+  
+  table {
+    table-layout: auto;
+    width: 100%;
+  }
+
+  table, th, td {
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  th {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: rgb(54, 53, 53);
+    text-align: center;
+    direction: ltr;  
+  }
+  
+  td {
+    padding: 10px 0px;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    text-align: center;
+    direction: ltr;
+}
+  
+  .dashed {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+  }
+  
+  .total {
+    font-weight: 800;
+    font-size: 20px !important;
+    color: black;
+  }
+  
+  input[type=number] {
+    text-align: right ;
+    max-width: 80px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  input[type=text] {
+    max-width: 80px;
+    text-align: right;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9,
+             -11px -11px 22px #ffffff;
+  }
+  
+  input[type=number]:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9,
+             -11px -11px 22px #ffffff;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+  -moz-appearance: textfield;
+  }
+  
+  .input1 input{
+    text-align: center;
+    max-width: 61px;
+    
+  }
+  .float{
+    width:40px;
+    height:40px;
+    background-color:#FF1D89;
+    color:#FFF;
+    border-radius:100%;
+    text-align:center;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.048),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.069),
+  0 12.5px 10px rgba(0, 0, 0, 0.085),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.101),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.122),
+  0 100px 80px rgba(0, 0, 0, 0.17);
+  }
+  
+  .float:hover {
+    background-color:#ff057e;
+  }
+  
+  .plus{
+    margin-top:10px;
+  }
+  
+  #sum {
+    text-align: right;
+    width: 100%;
+  }
+  
+  #sum input[type=text] {
+    width: 100%;
+    font-size: 33px !important;
+    color: black;
+    text-align: right !important;
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(to right, #2d48df38, #350d9170);
+    }
+    .invoice-container {
+        border: solid 1px gray;
+        width: 60%;
+        margin: 50px auto;
+        margin-bottom: 100px;
+
+        padding: 40px;
+        padding-bottom: 100px;
+        border-radius: 5px;
+        background: white;
+        border: none;
+        box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+  
+    .title-date {
+        width: 20%;
+    }
+    .invoice-number {
+        width: 20%;
+    }
+    .space {
+        width: 80%;
+    }
+  }

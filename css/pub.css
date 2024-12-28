@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a237e;
+    background: linear-gradient(to right, #2d48dfee, #350d91f5);
+    color: white;
+    padding: 10px;
+}
+.footer .home, .footer .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home,.profile{padding: 5px 20px;
+color: white;
+text-decoration: none;
+
+}
+.home:hover,.profile:hover{
+    background-color: #f0f0f033;
+    border-radius: 50px;
+    padding:5px 20px;
+
+}
+.activeprofile{
+    background-color: #f0f0f033;
+    border-radius: 50px;
+    padding:5px 20px;
+}
