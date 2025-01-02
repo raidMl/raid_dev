@@ -163,3 +163,25 @@ function closeVideo() {
     videoPlayer.currentTime = 0; // Reset the video time
     videoContainer.style.display = 'none';
 }
+
+
+const modal = document.getElementById('modal');
+
+function openModal() {
+    modal.classList.add('active');
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+}
+
+window.addEventListener("load", function () {
+    const wow = new WOW({
+        boxClass: 'wow', // Class name for the elements to animate
+        animateClass: 'animate__animated', // Animate.css class prefix
+        offset: 0, // Distance to start the animation
+        mobile: true, // Enable animations on mobile devices
+        live: true, // Act on asynchronously loaded content
+    });
+    wow.init();
+});
