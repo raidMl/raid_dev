@@ -120,6 +120,8 @@
         border-radius: 20%;
         border: none;
         opacity: 0.9;
+        transition: 0.3s;
+
     }
     .img:hover{
         opacity: 0.8;
