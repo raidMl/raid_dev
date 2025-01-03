@@ -1,3 +1,11 @@
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0"; // Fade out
+    setTimeout(() => {
+        preloader.style.display = "none"; // Remove from view
+    }, 500); // Matches the fade-out duration
+});
+
 function change_color() {
 
 
@@ -174,4 +182,21 @@ function openModal() {
 function closeModal() {
     modal.classList.remove('active');
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(".fade-in-element");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in-active");
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
+        });
+    });
+
+    fadeInElements.forEach((el) => observer.observe(el));
+});
+
 
